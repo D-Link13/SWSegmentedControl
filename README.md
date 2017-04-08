@@ -29,6 +29,14 @@ sc.frame = CGRect(x: 0, y: 0, width: 300, height: 44)
 sc.selectedSegmentIndex = 2 // default to 0
 ```
 
+### Delegate
+
+To keep track of selections, SWSegmentedControl provides SWSegmentedControlDelegate protocol
+```
+func segmentControl(_segmentControl: SWSegmentedControl, didSelectSegmentAt index: Int)
+```
+
+
 ### Change segment programmatically
 
 Setting property directly will change segment without animation
